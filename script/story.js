@@ -87,6 +87,7 @@ function startGame() {
   title.style.display = "none";
   quote.style.display = "none";
   wm.style.display = 'none';
+  musicBackground()
   showScene(1);
 }
 
