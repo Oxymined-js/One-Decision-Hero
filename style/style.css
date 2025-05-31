@@ -133,8 +133,12 @@ body {
     font-size: 1rem;
   }
 
-  .game .title span {
-    font-size: 4rem;
+  .game .title .span {
+    font-size: 3.5rem;
+  }
+
+  .game .quote {
+    margin-top: -5px;
   }
 
   .container-btn {
