@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: none;
 }
 
 .game {
@@ -38,6 +39,14 @@ body {
   font-size: 6rem;
 }
 
+.game .quote {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: -5px;
+  color: #e96d5e;
+}
+
 .game .text {
   color: #fff;
   text-align: center;
@@ -51,7 +60,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -12px;
+  margin-top: -3px;
   gap: 5px;
 }
 
@@ -93,6 +102,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .choice-button {
@@ -129,6 +140,10 @@ body {
   .container-btn {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .choises {
+    width: 100%;
   }
 
   .btn-start {
