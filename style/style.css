@@ -34,16 +34,17 @@ body {
   letter-spacing: 2px;
 }
 
-.game .title span {
+.game .title .span {
   font-family: Montserrat, sans-serif;
   font-size: 6rem;
+  cursor: pointer;
 }
 
 .game .quote {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  margin-top: -5px;
+  margin-top: -10px;
   color: #e96d5e;
 }
 
@@ -60,7 +61,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -3px;
   gap: 5px;
 }
 
@@ -153,3 +153,4 @@ body {
     letter-spacing: 2px;
   }
 }
+
