@@ -7,12 +7,12 @@ const scenes = [
   { id: 6, text: "Ia menyampaikan wahyu bahwa kamu adalah sang pahlawan terpilih untuk melawan Raja Iblis.", choices: [{ text: "Lanjut", next: 7 }] },
   { id: 7, text: "Utusan itu memberimu kekuatan untuk mengembalikan waktu.", choices: [{ text: "Lanjut", next: 8 }] },
   { id: 8, text: "Kamu pun berlatih keras bersama Alice hingga larut malam.", choices: [{ text: "Lanjut", next: 9 }] },
-  { id: 9, text: "Bertahun-tahun berlalu, kamu tumbuh menjadi remaja yang kuat, memimpin party berisi para pejuang.", choices: [{ text: "Lanjut", next: 10 }] },
+  { id: 9, text: "Bertahun-tahun berlalu, kamu tumbuh menjadi remaja yang kuat, memimpin party berisi para pahlawan lainnya.", choices: [{ text: "Lanjut", next: 10 }] },
   { id: 10, text: "Alice pun bergabung dalam party itu.", choices: [{ text: "Lanjut", next: 11 }] },
   { id: 11, text: "Kalian menyelamatkan banyak orang dan memukul mundur pasukan Raja Iblis dari berbagai wilayah.", choices: [{ text: "Lanjut", next: 12 }] },
   { id: 12, text: "Namun kamu menyadari tidak semua orang bisa diselamatkan.", choices: [{ text: "Lanjut", next: 13 }] },
   { id: 13, text: "Sebagian orang menyalahkanmu atas kematian orang terkasih mereka.", choices: [{ text: "Lanjut", next: 14 }] },
-  { id: 14, text: 'Tapi Alice selalu tersenyum, menguatkanmu: "Kamu adalah pahlawan. Pilihlah keputusan terbaik."', choices: [{ text: "Lanjut", next: 15 }] },
+  { id: 14, text: 'Tapi Alice selalu tersenyum, menguatkanmu: "Kamu adalah pahlawan. Aku selalu mendukungmu apapun keputusanmu."', choices: [{ text: "Lanjut", next: 15 }] },
   { id: 15, text: "Akhirnya, kamu sampai di istana Raja Iblis.", choices: [{ text: "Lanjut", next: 16 }] },
   { id: 16, text: "Kamu telah mengulang pertempuran ini 30 kali.", choices: [{ text: "Lanjut", next: 17 }] },
   { id: 17, text: "Dan setiap kali kamu menang, Raja Iblis merasuki Alice.", choices: [{ text: "Lanjut", next: 18 }] },
@@ -62,13 +62,13 @@ const scenes = [
   },
   {
     id: 26,
-    text: "Alice melawan. Jiwanya bergetar, antara sadar dan terpenjara.",
-    choices: [{ text: "Serang saat lengah", next: 24 }],
+    text: "Alice tiba tiba menyerangmu. Jiwanya bergetar, antara sadar dan berbisik: \"bunuhlah aku untuk masa depan impian kita.\"",
+    choices: [{ text: "Serangan Terakhir", next: 24 }],
   },
 ];
 
 const endings = {
-  end1: "Anda berhasil menyelamatkan dunia namun anda kehilangan sahabat anda sendiri, atau orang yang anda sayangi, dia tidak berada dimasa depan yang di impikan semenjak kecil. You won, but was it worth it?",
+  end1: "Anda berhasil menyelamatkan dunia namun anda kehilangan orang yang anda ingin lindungi, namun dia tidak berada dimasa depan bersamamu di masa depan yang kalian impikan. You won, but was it worth it?",
   end2: "Anda berhasil menyelamatkan dunia dengan konsekuensi anda telah mati bersama raja iblis, anda tidak dapat menikmati masa depannya yang anda impikan bersama Alice. You are not part of the future you dream of.",
 };
 
@@ -76,6 +76,7 @@ const textElement = document.querySelector(".text");
 const choicesElement = document.querySelector(".choices");
 const title = document.querySelector(".title");
 const startButton = document.querySelector(".btn-start");
+const quote = document.querySelector('.quote');
 const wm = document.querySelector('.wm')
 
 let typing = false;
@@ -83,6 +84,7 @@ let typing = false;
 function startGame() {
   startButton.style.display = "none";
   title.style.display = "none";
+  quote.style.display = "none";
   wm.style.display = 'none';
   showScene(1);
 }
@@ -123,3 +125,5 @@ async function showEnding(endId) {
 }
 
 startButton.addEventListener("click", startGame);
+
+
