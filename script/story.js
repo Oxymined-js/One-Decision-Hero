@@ -75,6 +75,7 @@ const endings = {
 const textElement = document.querySelector(".text");
 const choicesElement = document.querySelector(".choices");
 const title = document.querySelector(".title");
+const span = document.querySelector('.span')
 const startButton = document.querySelector(".btn-start");
 const quote = document.querySelector('.quote');
 const wm = document.querySelector('.wm')
@@ -126,11 +127,16 @@ async function showEnding(endId) {
 
 function musicBackground() {
   const music = document.querySelector('.music')
-  music.play()
+  music.play();
+  music.loop = true;
   music.muted = false;
 }
 
+span.addEventListener('click', () => {
+  musicBackground()
+})
+
 startButton.addEventListener("click", startGame);
-musicBackground();
+
 
 
