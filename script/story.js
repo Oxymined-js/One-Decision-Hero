@@ -138,5 +138,3 @@ span.addEventListener('click', () => {
 
 startButton.addEventListener("click", startGame);
 
-
-
