@@ -124,6 +124,13 @@ async function showEnding(endId) {
   await typeText(endings[endId]);
 }
 
+function musicBackground() {
+  const music = document.querySelector('.music')
+  music.play()
+  music.muted = false;
+}
+
 startButton.addEventListener("click", startGame);
+musicBackground();
 
 
