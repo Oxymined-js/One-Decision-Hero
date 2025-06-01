@@ -134,7 +134,7 @@ function musicBackground() {
 }
 
 span.addEventListener('click', () => {
-  musicBackground()
+  span.style.color = "#ff0000";
 })
 
 startButton.addEventListener("click", startGame);
