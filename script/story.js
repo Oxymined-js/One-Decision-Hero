@@ -69,7 +69,7 @@ const scenes = [
 
 const endings = {
   end1: "Anda berhasil menyelamatkan dunia namun anda kehilangan orang yang anda ingin lindungi, namun dia tidak berada dimasa depan bersamamu di masa depan yang kalian impikan. You won, but was it worth it?",
-  end2: "Anda berhasil menyelamatkan dunia dengan konsekuensi anda telah mati bersama raja iblis, anda tidak dapat menikmati masa depannya yang anda impikan bersama Alice. You are not part of the future you dream of.",
+  end2: "Anda berhasil menyelamatkan dunia dengan konsekuensi anda telah mati bersama raja iblis, Tapi cuma anda yang tidak ada di dalam masa depan sempurna ini. You are not part of the future you dream of.",
 };
 
 const textElement = document.querySelector(".text");
